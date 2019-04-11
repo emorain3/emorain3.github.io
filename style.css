@@ -2049,3 +2049,7 @@ footer ul
         font-size: 20px;
     }
 }
+
+#logo {
+    width: 30vw;
+}
