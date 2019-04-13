@@ -157,7 +157,12 @@ body p, body pre
     float: left;
     position: absolute;
     transform: translateY(-50%);
-    top: 50%;
+    /* top: 50%; */
+    top: 80%
+}
+
+.fa {
+    color: #ffd23e;
 }
 
 .menu-holder
