@@ -527,8 +527,8 @@ body .sm-clean a:hover, body .main-menu.sm-clean .sub-menu li a:hover, body .sm-
     float: left;
     width: 30%;
     max-width: 90px;
+    font-size: 4rem;
 }
-
 .service-txt
 {
     float: left;
@@ -543,11 +543,13 @@ body .sm-clean a:hover, body .main-menu.sm-clean .sub-menu li a:hover, body .sm-
     font-size: 19px;
     padding-bottom: 10px;
     padding-top: 0;
-    color: #fff;
+    /* color: #fff; */
     font-weight: 600;
 }
 
-
+.yellow-text {
+    color: #ffd23e;
+}
 
 /* ===================================
     4. Portfolio Section CSS
