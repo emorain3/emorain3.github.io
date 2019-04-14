@@ -631,9 +631,10 @@ body .sm-clean a:hover, body .main-menu.sm-clean .sub-menu li a:hover, body .sm-
 
 .portfolio-text-holder 
 {
+    /* border: solid white; */
     color: white;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     display: inline-block;
     z-index: 1;
@@ -641,6 +642,7 @@ body .sm-clean a:hover, body .main-menu.sm-clean .sub-menu li a:hover, body .sm-
     transform: translate(-50%);
     transition: all .3s ease;
     text-align: center;
+    width: 15vw;
 }
 
 .portfolio-title 
