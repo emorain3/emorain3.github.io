@@ -634,7 +634,7 @@ body .sm-clean a:hover, body .main-menu.sm-clean .sub-menu li a:hover, body .sm-
     /* border: solid white; */
     color: white;
     position: absolute;
-    top: 40%;
+    top: 45%;
     left: 50%;
     display: inline-block;
     z-index: 1;
