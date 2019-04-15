@@ -2060,7 +2060,8 @@ footer ul
 }
 
 #logo {
-    width: 30vw;
+    width: 50vw;
+    padding-bottom: 5vw;
 }
 
 #home_header {
