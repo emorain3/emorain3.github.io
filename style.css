@@ -2059,6 +2059,7 @@ footer ul
     }
 }
 
+
 #logo {
     width: 50vw;
     padding-bottom: 5vw;
@@ -2071,12 +2072,16 @@ footer ul
 
 }
 .thumb {
-    min-width: 25vw;
-    margin-left: -5vw;
-    margin-top: -1vw;
+    width: 25vw;
+    /* margin-left: -2vw;
+    margin-top: -1vw; */
 }
 
 /* Shadow hover credits to Samuel Thornton on CodePen @ https://codepen.io/sdthornton/pen/wBZdXq */
 #home_header:hover {
     text-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.readable-size {
+    font-size: 1rem;
 }
