@@ -2071,10 +2071,35 @@ footer ul
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 
 }
-.thumb {
-    width: 25vw;
-    /* margin-left: -2vw;
-    margin-top: -1vw; */
+
+
+
+@media (max-width: 1800px) {
+    #about_wrapper {
+        width: 85%;
+    }
+    
+    #about_content_holder {
+        width: 55vw;
+    }
+    
+    #about_image_container {
+        width: 25vw;
+    } 
+}
+
+@media (max-width: 1200px) {
+    #about_wrapper {
+        width: 95%;
+    }
+
+    #about_content_holder {
+        width: 65vw;
+    }
+
+    #about_image_container {
+        width: 28vw;
+    } 
 }
 
 /* Shadow hover credits to Samuel Thornton on CodePen @ https://codepen.io/sdthornton/pen/wBZdXq */
