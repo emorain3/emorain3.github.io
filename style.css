@@ -2088,6 +2088,11 @@ footer ul
     } 
 }
 
+#about_profile_img {
+    width: 60vw;
+    /* height: 40vh; */
+}
+
 @media (max-width: 1200px) {
     #about_wrapper {
         width: 95%;
