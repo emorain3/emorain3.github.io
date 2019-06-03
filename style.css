@@ -2088,24 +2088,44 @@ footer ul
     } 
 }
 
-#about_profile_img {
-    width: 60vw;
-    /* height: 40vh; */
-}
 
 @media (max-width: 1200px) {
     #about_wrapper {
         width: 95%;
     }
-
+    
     #about_content_holder {
         width: 65vw;
     }
-
+    
     #about_image_container {
         width: 28vw;
     } 
 }
+
+
+
+#about_image_container {
+    width: 55vw;
+} 
+
+#about_profile_img {
+    /* border: solid black 50px;
+    width: 50vw; */
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+#about_tagline {
+    text-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    font-size: 3.15rem;
+}
+
+#about_secondary_tag {
+    font-weight: bold;
+}
+
+
+
 
 /* Shadow hover credits to Samuel Thornton on CodePen @ https://codepen.io/sdthornton/pen/wBZdXq */
 #home_header:hover {
@@ -2113,5 +2133,5 @@ footer ul
 }
 
 .readable-size {
-    font-size: .95rem;
+    font-size: 1.15rem;
 }
