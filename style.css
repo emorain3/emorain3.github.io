@@ -2104,15 +2104,21 @@ footer ul
 }
 
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1200px) {
     #about_image_container {
         width: 80vw;
     } 
 }
 
-@media screen and (min-width: 1205px) {
+@media screen and (max-width: 1405px) {
     #about_image_container {
         width: 45vw;
+    } 
+}
+
+@media screen and (min-width: 1405px) {
+    #about_image_container {
+        width: 35vw;
     } 
 }
 
