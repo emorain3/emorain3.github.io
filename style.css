@@ -2060,6 +2060,15 @@ footer ul
 }
 
 
+
+/* ********************* */
+/*  Portfolio Section Shtuff */
+/* ********************* */
+#portfolio_grid_vid {
+    height: 14vw;
+}
+
+
 #logo {
     width: 50vw;
     padding-bottom: 5vw;
@@ -2072,7 +2081,9 @@ footer ul
 
 }
 
-
+/* ********************* */
+/*  ABOUT Section Shtuff */
+/* ********************* */
 
 @media (max-width: 1800px) {
     #about_wrapper {
@@ -2116,7 +2127,7 @@ footer ul
     } 
 }
 
-@media screen and (min-width: 1405px) {
+@media screen and (min-width: 1410px) {
     #about_image_container {
         width: 35vw;
     } 
