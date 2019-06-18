@@ -2068,7 +2068,19 @@ footer ul
     height: 14vw;
 }
 
+#p-item-6 {
+    background-color: #1E1E1E;
+    height: 12.15vw;
+    width: 21.5vw;
+}
+#portfolio-text-holder-4 {
+    /* border: solid #5067c1; */
+    top: 30%;
+}
 
+
+
+/*  */
 #logo {
     width: 50vw;
     padding-bottom: 5vw;
