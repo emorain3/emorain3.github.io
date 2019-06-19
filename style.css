@@ -2068,6 +2068,27 @@ footer ul
     height: 14vw;
 }
 
+@media screen and (max-width: 800px) {
+    #portfolio_grid_vid {
+        /* width: 34vw; */
+        height: 64vw;
+    }   
+}
+
+@media screen and (min-width: 801px) {
+    #portfolio_grid_vid {
+        /* width: 34vw; */
+        height: 30.25vw;
+    }  
+}
+
+@media screen and (min-width: 1205px) {
+    #portfolio_grid_vid {
+        /* width: 34vw; */
+        height: 14vw;
+    }  
+}
+
 #p-item-6 {
     background-color: #1E1E1E;
     height: 12.15vw;
@@ -2110,7 +2131,6 @@ footer ul
         width: 25vw;
     } 
 }
-
 
 @media screen and (max-width: 767px) {
     #about_wrapper {
@@ -2172,3 +2192,5 @@ footer ul
 .readable-size {
     font-size: 1.15rem;
 }
+
+/* 767px, 1200px, 1405px, 1800px */
