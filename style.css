@@ -2145,7 +2145,7 @@ footer ul
     }
 }    
 
-@media screen and (min-width: 1605px) {
+@media screen and (min-width: 1500px) {
     #portfolio_grid_vid {
         /* width: 34vw; */
         height: 16vw;
