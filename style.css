@@ -2145,6 +2145,19 @@ footer ul
     }
 }    
 
+@media screen and (min-width: 1605px) {
+    #portfolio_grid_vid {
+        /* width: 34vw; */
+        height: 16vw;
+    }  
+
+    #p-item-6 {
+        background-color: #1E1E1E;
+        height: 13.85vw;
+        width: 20.75vw;
+    }
+}    
+
 #portfolio-text-holder-4 {
     /* border: solid #5067c1; */
     top: 30%;
