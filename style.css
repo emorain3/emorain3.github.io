@@ -2106,6 +2106,18 @@ footer ul
         width: 31.75vw;
     }
 }
+@media screen and (min-width: 1100px) {
+    #portfolio_grid_vid {
+        /* width: 34vw; */
+        height: 21vw;
+    }  
+    
+    #p-item-6 {
+        background-color: #1E1E1E;
+        height: 18.15vw;
+        width: 27.75vw;
+    }
+}
 
 @media screen and (min-width: 1205px) {
     #portfolio_grid_vid {
