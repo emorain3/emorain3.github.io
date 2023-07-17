@@ -4,6 +4,7 @@ include_once (dirname(dirname(__FILE__)) . '/config.php');
 
 //Initial response is NULL
 $response = null;
+$email = "emorain@live.com"
 
 //Initialize appropriate action and return as HTML response
 if (isset($_POST["action"])) {
