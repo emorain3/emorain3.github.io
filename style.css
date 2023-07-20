@@ -331,6 +331,54 @@ body .sm-clean a:hover, body .main-menu.sm-clean .sub-menu li a:hover, body .sm-
     1.2. Global Section CSS
 ====================================== */
 
+.demo-container {
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+
+    /* height: 960px; */
+    /* overflow: hidden; */
+}
+
+
+.demo-item {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+#row-reversed {
+    flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 780px) {
+    .demo-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    
+        /* height: 960px; */
+        /* overflow: hidden; */
+    }
+    .demo-item {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-around; */
+    }
+    #row-reversed {
+        flex-direction: column;
+    }
+
+    .service-txt-reversed
+    {
+        margin-right: auto;
+    }
+}
+
+
+
 .section 
 {    
     background-color: #1E1E1E;
@@ -370,7 +418,7 @@ body .sm-clean a:hover, body .main-menu.sm-clean .sub-menu li a:hover, body .sm-
 
 .section-content-holder 
 {
-    width: 690px;
+    width: 70%;
     margin-top: 50px;
 }
 
@@ -533,6 +581,14 @@ body .sm-clean a:hover, body .main-menu.sm-clean .sub-menu li a:hover, body .sm-
 {
     float: left;
     margin-left: 25px;
+    text-align: left;
+    line-height: 25px;
+    width: calc(70% - 25px);
+}
+.service-txt-reversed
+{
+    float: left;
+    margin-right: 25px;
     text-align: left;
     line-height: 25px;
     width: calc(70% - 25px);
@@ -1886,6 +1942,7 @@ footer ul
         margin-right: 0;
         margin-left: 0;
     }    
+
 
     .footer-mail 
     {
