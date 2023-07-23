@@ -827,6 +827,12 @@ body .sm-clean a:hover, body .main-menu.sm-clean .sub-menu li a:hover, body .sm-
     max-width: 95%;
 }
 
+.portfolio-item-wrapper-additional
+{
+    display: flex;
+   justify-content: center;
+}
+
 
 
 /* ===================================
@@ -2123,6 +2129,10 @@ footer ul
 /* ********************* */
 #portfolio_grid_vid {
     height: 14vw;
+}
+
+#portfolio_vid {
+    height: 25vw;
 }
 
 #p-item-6 {
