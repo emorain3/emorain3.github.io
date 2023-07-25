@@ -543,6 +543,13 @@ body .sm-clean a:hover, body .main-menu.sm-clean .sub-menu li a:hover, body .sm-
 /* ===================================
     3. Services Section CSS
 ====================================== */
+.portfolio-txt{
+    font-size: medium;
+}
+
+.portfolio-txt ul{
+    font-size: small;
+}
 
 #services
 {
@@ -827,6 +834,13 @@ body .sm-clean a:hover, body .main-menu.sm-clean .sub-menu li a:hover, body .sm-
     display: block;
 }
 
+.portfolio-content {
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+}
+
 #portfolio-grid {
     transition: all .5s ease;
     opacity: 1;
@@ -845,6 +859,7 @@ body .sm-clean a:hover, body .main-menu.sm-clean .sub-menu li a:hover, body .sm-
 .portfolio-item-wrapper
 {
     width: 690px;
+    width: 50%;
     margin-top: 100px;
     margin-bottom: 50px;
     max-width: 95%;
@@ -2154,8 +2169,8 @@ footer ul
     height: 14vw;
 }
 
-#portfolio_vid {
-    height: 25vw;
+.portfolio-vid {
+    height: 30vw;
 }
 
 #p-item-6 {
@@ -2168,7 +2183,10 @@ footer ul
     .portfolio_grid_vid {
         width: 100%;
         height: 64vw;
-    }   
+    }  
+    .portfolio_vid {
+        height: 60vw;
+    } 
 }
 
 @media screen and (min-width: 801px) {
@@ -2215,12 +2233,18 @@ footer ul
         height: 14vw;
     }  
     
+    
     #p-item-6 {
         background-color: #1E1E1E;
         height: 12.15vw;
         width: 10.5vw;
     }
 }
+
+@media screen and (max-width: 1205px) {
+    .portfolio_vid {
+        height: 45vw;
+    } }
 
 @media screen and (min-width: 1405px) {
     .portfolio_grid_vid {
@@ -2345,6 +2369,9 @@ footer ul
 
 
 
+.clickable {
+    cursor: pointer;
+}
 
 /* Shadow hover credits to Samuel Thornton on CodePen @ https://codepen.io/sdthornton/pen/wBZdXq */
 #home_header:hover {

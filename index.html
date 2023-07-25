@@ -159,7 +159,11 @@
                                 <div class="service-img"> 
                                     <span class="fa fa-code"></span>
                                 </div>
-                                <div class="info-text"> I've refreshed some of my old projects. This time taking new approaches to highlight what matters to me. <br> </div>
+                                <div class="info-text"> 
+                                    I've been refreshing some of my old projects. This time taking new approaches to highlight important dev considerations. 
+                                    <br> 
+                                    <!-- Click the videos for more info -->
+                                </div>
                                 <p>&nbsp;</p>
 
                                 <!-- <div class="one_half animate">
@@ -216,21 +220,20 @@
                                     
                                     <div class="demo-item  animate">
                                         <!-- <a class=" ajax-portfolio" href="images/img_05s.jpg" data-id="4" onclick="window.open('https://github.com/emorain3/Mock-Shopping-Website')"> -->
-                                            <a class=" ajax-portfolio" data-id="4" onclick="location.href='./portfolio-1.html'">
+                                            <a class=" ajax-portfolio  clickable"   data-id="4" onclick="location.href='./portfolio-1.html'">
                                                 <video class="portfolio_grid_vid" autoplay="autoplay" autoplay loop muted playsinline>
                                                     <source src="images/Mock_E-Commerce_Site.mov" type="video/mp4">
                                             </video>                                                  
                                         </a> 
                                         
-                                        <div class="service-txt animate">
-                                                <h4> Database Design in a NoSQL DB </h4> 
+                                        <div class="service-txt animate clickable" onclick="location.href='./portfolio-1.html'">
+                                                <h4> Database Design Fundamentals in a NoSQL DB? </h4> 
                                                 MongoDB was thr first DB language/framework that I learned, and althoug it was easier, 
-                                                it may have been a disservice to my ability to understand it well. 
-                                                Because the first Databse frmework I learned was a [noSQL/ Document-oriented] I didn't have the context to understand why it was so innovative.
-                                                I couldn't understand that the ability to __ and __ isn't quite so simple in the more conventional SQL and associates. 
-                                                Determining project scale at the beginning. 
-                                                My issues here with this project was assuming that it would take the same amount of time to complete 
-                                                as the simpler Javascript apps I had been creating. We assis
+                                                learning it first may have been a disservice to my ability to understand i, or NoSql databases well. 
+                                                
+
+                                                <!-- My issues with this project was assuming that it would take the same amount of time to complete as the simpler Javascript 
+                                                apps I had been creating. We assis -->
 
                                         </div> 
                                     </div>
@@ -238,12 +241,12 @@
 
                                     <div id="row-reversed" class="demo-item  last animate">
                                             <!-- <a class=" ajax-portfolio" href="images/img_05s.jpg" data-id="4" onclick="window.open('https://github.com/emorain3/scheduling-app-v2')"> -->
-                                            <a class=" ajax-portfolio" data-id="4" onclick="location.href='./portfolio-2.html'">
+                                            <a class=" ajax-portfolio  clickable" data-id="4" onclick="location.href='./portfolio-2.html'">
                                                 <video class="portfolio_grid_vid" autoplay="autoplay" autoplay loop muted playsinline>
                                                         <source src="images/TimeReservationAppDemo.mp4" type="video/mp4">
                                                 </video>
                                             </a> 
-                                        <div class="service-txt-reversed animate">
+                                        <div class="service-txt-reversed animate clickable"  onclick="location.href='./portfolio-2.html'">
                                             <h4> Loose Coupling in a React App </h4> 
                                             Determining project scale at the beginning. 
                                                 My issues here with this project was assuming that it would take the same amount of time to complete 
@@ -254,7 +257,7 @@
                                     
                                     
                                     <div class="demo-item  animate">
-                                        <a class=" ajax-portfolio" onclick="location.href='./portfolio-3.html'">
+                                        <a class=" ajax-portfolio  clickable" onclick="location.href='./portfolio-3.html'">
                                             <video class="portfolio_grid_vid" autoplay="autoplay" autoplay loop muted playsinline>
                                                     <source src="images/video_placeholder_blur.mp4" type="video/mp4">
                                                     <meta itemprop="description" content="blurred filler image. 
@@ -263,9 +266,9 @@
                                                     
                                             </video>                                                  
                                         </a> 
-                                        <div class="service-txt last animate">
+                                        <div class="service-txt last animate" onclick="location.href='./portfolio-3.html'">
                                                 <h4> Cloud Dev Demo </h4> 
-                                                Sorry, this one is still being worked on. Last Updated 7/23/23. 
+                                                Sorry, this one is still being worked on. Last Updated 7/25/23. 
                                         </div>
                                     </div>
                                     
@@ -538,40 +541,47 @@
                                         proactive approach to my job. With my background and mindset, I will excel as I transition from Consultant 
                                         to full-time Web Developer!  -->
                                         Last year, in 2022, my team- the Capability Team- decided to bring in the new year with gusto. 
-                                        "Let's create a web app for the team at large!" Meaning the everyone o the team and not just our sub-team.
-                                        I had only ever used React as my primary tool for building Web Apps. My team was 
-                                        contracted for an ingestion project and I was the only one on the team with Web experience. 
-                                        So I was the primary developer minus some assistance we'd rope in from time to time. 
-                                        <p>&nbsp;</p>
-                                        I was required to build a small end-to-end app (SQL, Microsoft Azure, with user Auth) to aid in the 
-                                        Ingestion pipeline- it would only be used internally for about ~100 users but should be able to support 
-                                        more if needed. After successfully completing the web app and having had the most enjoybable experience 
+                                        "Let's create a web app for the team at large!" Meaning all of the couple hundred people working on this project 
+                                        and not just our sub-team.
+                                        The team at large was contracted for an Cloud-Migration project and I was the only one on my sub-team with Web experience. 
+                                        Therefore, I was the primary developer minus some assistance we'd rope in from time to time. 
+                                         
+                                        <br> <br>
+                                        I was required to build a small end-to-end app (SQL, React, Microsoft Azure, with user Auth) to aid in the 
+                                        Ingestion pipelines- it would only be used internally for about ~100 users but should be able to support 
+                                        more if needed. React was my choice as I had only ever used React for building front-ends. 
+                                        After successfully completing the web app and having had the most enjoybable experience 
                                         on the project thus far I was requested to *Re-build* it again in 2 months- but this time, do it in Angular.
+                                        And we'll also still need you to perform your regular Data Engineer duties as well.
+                                        <br> <br>
                                         Terror.
-                                        <p>&nbsp;</p> 
+                                        <br> <br>
                                         Worry.
-                                        <p>&nbsp;</p>
+                                        <br> <br>
                                         Nonetheless, we perservere.
-                                        <p>&nbsp;</p>
-                                        The reasons they provided me for this stack change were vague. I understood if to be due to 
+                                        <br> <br>
+                                        The reasons they provided me for this stack change were limited, but I understood it to be due to 
                                         security needs and better integration with the existing architecture within the company. 
                                         I had never used Angular or built anything in C# or .Net and I had the same time frame alotted to me as when 
                                         I was developing in a web stack I already knew. Thankfully, I managed to build a full app, 
-                                        with DRYer code and greater security then the first (by virtue of built-in Angular auth) in TWO languages/frameworks that I had never ever 
+                                        with DRYer code and greater security then the first version (by virtue of built-in Angular auth) 
+                                        in TWO languages/frameworks that I had never ever 
                                         used before. It was an exhausting and a very rewarding experience. I used to be the biggest fangirl of React, 
                                         but I was so impressed by structure and cohesion of Angular after that experience.
-                                        <p>&nbsp;</p>
-                                        In spite of accomplishing something I wsa afraid I wouldn't be able to, the biggest lesson that I learned 
+                                        <br> <br>
+                                        In spite of accomplishing something I was afraid I wouldn't be able to, the biggest lesson that I learned 
                                         from that experience was not the technical skill that I gained. The biggest lesson that I learned was 
                                         the importance of communicating to my superior and 
                                         working with them to set realistic goals. I may have completed the app but it certainly was not my best work.
                                         It was rushed and hacked together. The code ended up DRYer because of the conventions of the language, not because 
-                                        I took the time to implement it in such a manner. I did not work iteratively.I spent about 12 hours every night 
+                                        I took the time to implement it in such a manner. I did not work iteratively. I spent about 12 hours every day 
                                         and many weekend hours chugging away. I barely got it to work in time. What could've been 
                                         an excellent opportunity for me to develop a more intuitive understanding of 2 new languages (Typescript and .NET)
-                                        was an exhaustive battle for completion. Had I overcome my fear of disappointing my superior(s) it would have been a 
+                                        was an exhaustive battle for completion. Had I overcome my worry of disappointing my superior(s) it would have been a 
                                         better exp for EVERYONE. 
-                                        So there's a 2-for-1: a description of something I built that I am proud of and a pivotal lesson in my growth as an adult that likes to work with people.
+                                        This is more of a 2-for-1 response: a description of something I built that I am proud of and a pivotal lesson in 
+                                        my growth as an adult. 
+                                        <!-- that likes to produce good quality work with colleagues and managers alike. -->
 
                                     </p>
                                 </div>
