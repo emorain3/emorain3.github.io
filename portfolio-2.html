@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en-US">
     <head>
-        <title>Cardea - One Page Html Template</title>
+        <title>React-Redux: Demo Time Slot Reservation Screen</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="description" content="Template by CocoBasic" />
         <meta name="keywords" content="HTML, CSS, JavaScript, PHP" />
@@ -91,52 +91,36 @@
             <div id="content" class="site-content center-relative">        
                 <div class="portfolio-item-wrapper center-relative portfolio-item-wrapper-additional">
                     <div class="portfolio-content">
-                        <div class="info-text" style="padding-left: 1em;">Two ghostly white figures in coveralls and helmets are softly dancing.</div>
+                        <div class="info-text" style="padding-left: 1em;"> Title and Description in Development</div>
                             <video class="portfolio-vid" autoplay="autoplay" autoplay loop muted playsinline>
                                 <source src="images/TimeReservationAppDemo.mp4" type="video/mp4">
                             </video>
                         <p>&nbsp;</p>
-                        <div class="one_half">
-                            <div class="service-holder">
-                                <div class="service-img"> 
-                                    <img src="images/icon_preciese.png" alt="">
-                                </div>
-                                <div class="service-txt">
-                                    <h4>Preciese</h4> 
-                                    Phasellus vel est sem integer suscipit enim quis dictum.
-                                </div>
-                            </div>
+                        <div class="portfolio-txt">
+                            <!-- <p style="font-size: large;">Stack:</p>  -->
+                            <ul>
+                                <li> React.js (v16) </li>
+                                <li> Node.js (v16 )</li>
+                                <li> React-Redux (v8) </li>
+                                <li> Site: <a href="https://scheduling-ui.netlify.app/" target="_blank"> https://scheduling-ui.netlify.app/ </a></li>
+                                <li> Github: <a href="https://github.com/emorain3/scheduling-app-v2" target="_blank"> https://github.com/emorain3/scheduling-app-v2 </a></li>
+                            </ul> 
+                            <!-- <h6> SQL? Or noSQL? That Is the Question.  </h6> -->
+                            My intention for this one was to remake an earlier version of a calendar demo app but this time applying the 
+                            OOP practice of Loose Coupling and Strong Cohesion in a React context.... Re-visiting this project was a happy 
+                            coincidence: during an hour-long mock front-end interview I was given the task of creating a scheduling modal. 
+                            Since I already had developed this mock scheduling app a couple years ago, I figured that I would just use that 
+                            as a base. Please forgive the wonky Bootsrap logos, the free icons are giving me trouble. After the interview I 
+                            noticed that my old code, comprised of only 3 dev-made components, was very tightly coupled. Coupling is 
+                            typically a concern for Object-Oriented languages like Java or C#. It isn't something that is discused as 
+                            much in contexts like React, as the backbone of React.js- <i> props </i> - is inherently a tight coupling archetype. 
+                            I was curious to see if I could improve my code to make it scalable, by reducing coupling via Redux. 
+                            I actually opted to use redux because I've been hearing abuot redux alternatives like <strong><i>Zustand</i></strong> 
+                            and <strong><i> Jotai </i></strong>. I want to see what the hub-bub was about. I felt that the best way to
+                            understand why I keep hearing about these Redux alternatives is to use both Redux and the alternatives! 
+                            
+                            <br> TODO: send date to modal via redux as well
 
-                            <div class="service-holder">
-                                <div class="service-img"> 
-                                    <img src="images/icon_responsive.png" alt="">
-                                </div>
-                                <div class="service-txt">
-                                    <h4>Responsive</h4> 
-                                    Donec vel est sem integer suscipit enim quis lorem.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="one_half last">
-                            <div class="service-holder">
-                                <div class="service-img">
-                                    <img src="images/icon_portfolio.png" alt="">
-                                </div>
-                                <div class="service-txt">
-                                    <h4>Portfolio</h4> 
-                                    Amet vel est sem integer suscipit enim quis dolor.
-                                </div>
-                            </div>
-                            <div class="service-holder">
-                                <div class="service-img"> 
-                                    <img src="images/icon_support.png" alt="">
-                                </div>
-                                <div class="service-txt">
-                                    <h4>Support</h4> 
-                                    Est sem integer suscipit enim quis dictum feugiat curabitur.
-                                </div>
-                            </div>
                         </div>
                         <div class="clear"></div>                            
                     </div>                     
