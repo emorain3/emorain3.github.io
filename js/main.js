@@ -199,6 +199,7 @@ function imageSliderSettings() {
         var speed_value = window[id + '_speed'];
         auto_value = (auto_value === 'true') ? true : false;
         hover_pause = (hover_pause === 'true') ? true : false;
+        // console.log("auto_value: " + auto_value)
         jQuery('#' + id).owlCarousel({
             loop: true,
             autoHeight: true,
@@ -207,6 +208,7 @@ function imageSliderSettings() {
             autoplayHoverPause: hover_pause,
             autoplayTimeout: speed_value,
             responsiveClass: true,
+            nav:true,
             items: 1
         });
 
