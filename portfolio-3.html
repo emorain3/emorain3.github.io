@@ -1,14 +1,14 @@
 <!DOCTYPE HTML>
 <html lang="en-US">
     <head>
-        <title>Cardea - One Page Html Template</title>
+        <title>Data Engineering Demo</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta name="description" content="Template by CocoBasic" />
+        <meta name="description" content="Ecclesia's Portfolio Website" />
         <meta name="keywords" content="HTML, CSS, JavaScript, PHP" />
-        <meta name="author" content="CocoBasic" />
+        <meta name="author" content="CocoBasic & Ecclesia Morain" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-        <link rel="shortcut icon" href="images/favicon.ico" />    
+        <link rel="shortcut icon" href="images/logo_initials.png" />    
         <link href='http://fonts.googleapis.com/css?family=Poppins:100,200,300,400,400i,500,600,700%7CMontserrat:700' rel='stylesheet' type='text/css'>		
         <link rel="stylesheet" type="text/css"  href='style.css' />
 
@@ -101,12 +101,17 @@
                                         </p>                                        
                                     </div>   
 
+                                    <!-- </div> -->
                                     <div class="text-slide">
                                         <p class="text-slide-content">
                                             <img  src="images/Data Eng Diagrams/portfolio_banner_photos_3.png" alt="" />
                                         </p>                                          
                                     </div>                                                           
-                        <!-- </div> -->
+                                    <div class="text-slide">
+                                        <p class="text-slide-content">
+                                            <img  src="images/Data Eng Diagrams/portfolio_banner_photos_4.png" alt="" />
+                                        </p>                                          
+                                    </div>                                                           
 
                         <div class="clear" style="height: 5vw;"></div>
 
@@ -198,10 +203,21 @@
 
                         
                         <p class="info-text" style="font-size: large;">
-                           <a target="_blank" href="https://community.cloud.databricks.com/?o=8313835604493104#notebook/2262247083150617/command/2262247083150619"> 
+                           <a target="_blank" href="./images/Data Eng Diagrams/College_Admissions_Data_Processing Notebook_CLEAN.html"> 
                             >> Databricks Notebook << </a> 
                         </p>
 
+                        
+                        
+                        
+                        
+                        <!-- TASK 1 -->
+                        <p class="info-text" style="margin-bottom: 10px; font-size: large;"> 
+                            <span style="font-weight: bold;"> Task 1 </span> - Design a data flow providing the trends of 
+                            university by their global ranking and number of applicants vs admissions 
+                        </p>
+                        
+                        <div class="clear" style="height: 2vw;"></div>
                         <div>
                             <div class="one_half">
                                 <p class="info-text" style="margin-bottom: 10px; font-size: large;"> 
@@ -230,61 +246,130 @@
                                     </ol> 
                                 </p>
                             </div>
+                        </div>
+                            <img src="images/Data Eng Diagrams/yearly_ranking_standard_deviation_avgs.png" alt="">
+                            <img src="images/Data Eng Diagrams/global_rank_v_admissions_graph.png" alt="">
+                        <div style="font-size: medium;"> 
+                            
+                            <p>
+                                This problem revealed just how much data existed that wasn't recorded that would have allowed me to devlop more robust and consistent analytics.
+                            </p>
+                            <ul>
+                                <li>
+                                   The <span style="font-style: italic;"> Universities Data.csv </span> and <span style="font-style: italic;"> Universities_Global_Ranking.csv </span> have a plethora of information regarding global rank and other statistical data
+                                    for over 1000 universities over the course of years...but some years don't have records for schools recorded in other years, and when combined
+                                    the two files have mismatching data.  
+                                    <a target="_blank" href="./images/Data Eng Diagrams/Tables and Graphs/Data Consistency Check_world_ranking_data.html"> 
+                                        >> Data Consistency Check_world_ranking_data.html << </a>
+                                </li>
+                                 
+                                <li>
+                                    <span style="font-style: italic;"> College_Admissions.csv </span> and <span style="font-style: italic;"> College_data.csv </span> have even more 
+                                    data about North American colleges. <span style="font-style: italic;"> College_Admissions.csv </span> even includes a breakdown of data for different demographics including, 
+                                    SAT score groups, ethnic minorities, and campus prerequisites, but without any indication of the date/time the records belong to, it limited a lot of options on what coould be done with the data.
+                                </li>
+                                
+                            </ul>
+                            
+                            <p>
+                                Regardless, there is still plenty of meaning to be gleaned from these datasets.
+                                To answer this problem I split the csv files into 2 datasets: <span style="font-style: italic;"> Universities Data.csv </span> and <span style="font-style: italic;"> Universities_Global_Ranking.csv </span> that provides gobal rank data, and 
+                                <span style="font-style: italic;"> College_Admissions.csv </span> and <span style="font-style: italic;"> College_data.csv </span> to provide college-specific applicant and admissions data. 
+                            </p>
 
-
+                            <ol>
+                                    <li>
+                                        I used the data from <span style="font-style: italic;"> College_Admissions.csv </span> to provide the <span style="font-weight: bold;">  admissions and applicantions information </span>  for every college it had documented. 
+                                        Thankfully there weren't duplicates so this step is simple.
+                                    </li>
+                                    <li>
+                                        I then developed a scoring system that would assign every college having a world rank in <span style="font-style: italic;"> Universities Data.csv </span> a singular score by stimply taking the average of every score available no matter the year.
+                                        This would mean that certain colleges may have the same score, but I don't think that changes the meaning of the information we're working towards. This also means that some colleges will have more ranks contributing to it's final score.
+                                        I calculated the standard deviation in all known world rankings for each college to include with the final product to provide context to the credibility of the final ranking outcome. 
+                                        <a target="_blank" href="./images/Data Eng Diagrams/Tables and Graphs/Standard Deviation Rankings Over Each Yr.html"> 
+                                            >> Standard Deviation Rankings Over Each Yr.html << </a>
+                                    </li>
+                                    <li>
+                                        I tested this scoring system on a smaller subset of the data from this file and once that was validated 
+                                        I combined the 2 datasets and visualized the comparative details regarding, world rank, number of applicants, and the number of admissions 
+                                        <a target="_blank" href="./images/Data Eng Diagrams/Tables and Graphs/Applicants v Admissions by Global Rankings.html"> 
+                                            >> Applicants v Admissions by Global Rankings.html << </a>
+                                    </li>
+                            </ol>
 
                         </div>
 
-                        <div class="clear" style="height: 3vw;"></div>
-                               
-                        <!-- TASK 1 -->
-                        <p class="info-text" style="margin-bottom: 10px; font-size: large;"> 
-                            <span style="font-weight: bold;"> Task 1 </span> - Design a data flow providing the trends of 
-                            university by their global ranking and number of applicants vs admissions 
-                        </p>
-                            <img src="images/img_12s.jpg" alt="">
-                            <img src="images/img_08s.jpg" alt="">
-                        <div>
-                            Cras pretium metus pulvinar ultricies auctor. In varius purus blandit sem mollis tristique. Curabitur sed lorem vel ligula pulvinar porttitor. Proin sit amet mauris eleifend amet, ullamcorper lacus. Vangelis rich in heavy atoms descended from astronomers dream of the mind’s eye stuff.
-                        </div>
-
-                        <div class="clear" style="height: 3vw;"></div>
+                        <div class="clear" style="height: 5vw;"></div>
 
                         <!-- TASK 2 -->
-                        <p class="info-text" style="margin-bottom: 10px; font-size: large;"> 
-                            <span style="font-weight: bold;"> Task 2 </span> - Design a data flow providing the trends of 
-                            university by their global ranking and number of applicants vs admissions 
-                        </p>
-                            <img src="images/img_12s.jpg" alt="">
-                            <img src="images/img_08s.jpg" alt="">
-                        <div>
-                            Cras pretium metus pulvinar ultricies auctor. In varius purus blandit sem mollis tristique. Curabitur sed lorem vel ligula pulvinar porttitor. Proin sit amet mauris eleifend amet, ullamcorper lacus. Vangelis rich in heavy atoms descended from astronomers dream of the mind’s eye stuff.
+                        <div style="font-size: medium;">
+                            <p class="info-text" style="margin-bottom: 10px; font-size: large;"> 
+                                <span style="font-weight: bold;"> Task 2 </span> - Provide the trends data set for the top 1000 universities. 
+                            </p>
+                                <img src="images/Data Eng Diagrams/Cummulative_global_rank_v_admissions_table.png" alt="">
+                            <div>
+                                
+                                Although we have over 1000 world ranks available when combining <span style="font-style: italic;"> Universities Data.csv </span> and <span style="font-style: italic;"> Universities_Global_Ranking.csv </span> , 
+                                we only have a little over 200 hundred colleges that we have the applicant and admission data for that exist in both datasets.
+                                It was at this point that I realized how small the dataset was so I attempted to merge all of the csv files into one massive dataset. 
+                                I performed the same rank score as above, and due to the discrepancy in the world rank datasets some colleges have different values.
+                                I did not generate a graph for this dataset because the credibility of the data isn't reliable.
+    
+                            </div>
+    
+                            <div class="clear" style="height: 5vw;"></div>
                         </div>
-
-                        <div class="clear" style="height: 3vw;"></div>
 
                         <!-- TASK 3 -->
-                        <p class="info-text" style="margin-bottom: 10px; font-size: large;"> 
-                            <span style="font-weight: bold;"> Task 3 </span> - Design a data flow providing the trends of 
-                            university by their global ranking and number of applicants vs admissions 
-                        </p>
-                            <img src="images/img_12s.jpg" alt="">
-                            <img src="images/img_08s.jpg" alt="">
-                        <div>
-                            Cras pretium metus pulvinar ultricies auctor. In varius purus blandit sem mollis tristique. Curabitur sed lorem vel ligula pulvinar porttitor. Proin sit amet mauris eleifend amet, ullamcorper lacus. Vangelis rich in heavy atoms descended from astronomers dream of the mind’s eye stuff.
+                        <div style="font-size: medium;">
+                            <p class="info-text" style="margin-bottom: 10px; font-size: large;"> 
+                                <span style="font-weight: bold;"> Task 3 </span> - Provide the trends by state with respect 
+                                to the number of applicants vs admissions per year
+                            </p>
+                                <img src="images/Data Eng Diagrams/State_scope_stats.png" alt="">
+                            <div>
+                                Since all of my data had been confirmed to be cleaned and assesed after the last tasks, this task was very straightforward. 
+                                Using the tables I grouped the data by state, calculated the avergae world rank using the "average world rank column" 
+                                and stored the table as a parquet file exported this graph. 
+                                There are fewer entries here due to some null values for one of the states, Alabama I believe it was. SO not every state is accoutned for.
+                                <a target="_blank" href="./images/Data Eng Diagrams/Tables and Graphs/State-Scope Statistics.html"> 
+                                    >> State-Scope Statistics.html << </a>
+                            </div>
                         </div>
 
-                        <div class="clear" style="height: 3vw;"></div>
+                        <div class="clear" style="height: 5vw;"></div>
 
                         <!-- TASK 4 -->
                         <p class="info-text" style="margin-bottom: 10px; font-size: large;"> 
-                            <span style="font-weight: bold;"> Task MISC </span> - Design a data flow providing the trends of 
-                            university by their global ranking and number of applicants vs admissions 
+                            <span style="font-weight: bold;"> Task MISC </span> - Handling Exceptions & Validating Input
                         </p>
-                            <img src="images/img_12s.jpg" alt="">
-                            <img src="images/img_08s.jpg" alt="">
                         <div>
-                            Cras pretium metus pulvinar ultricies auctor. In varius purus blandit sem mollis tristique. Curabitur sed lorem vel ligula pulvinar porttitor. Proin sit amet mauris eleifend amet, ullamcorper lacus. Vangelis rich in heavy atoms descended from astronomers dream of the mind’s eye stuff.
+                            <p class="entry-title" style="font-size: medium;"> How to handle exceptions </p>
+                            <ul>
+                                <li>
+                                    (predictive) try-catch
+                                </li>
+                                <li>
+                                    (in-time)Logs - my crutch. The holy grail.
+                                </li>
+                            </ul>
+                            
+                            My original intention was to start this assignment doing TDD, run unit tests on all of my functions, and practice writing clean and cohesive code. 
+                            The context of this assignment (and maybe personal ignorance on resources that are available) didn't really allow me to do TDD and test my code to perfection. 
+                            Regardless, I was still able to acoomplish some degree of testing synchronously while building my code, in an informal way.
+                            The generic util functions that I developed were informally tested (not with unit tests) with sample data included in the databricks notebook that has hundreds of lines of commented code.
+                            Using logs I was able to keep track of how my data looked as I operated on it. The "logs" were just good ole' reliable print statements.
+                            
+                            <p class="entry-title" style="margin-top:20px; font-size: medium;"> How to validate input when ingesting data </p>
+                            <ul>
+                                <li>
+                                    Perform <span style="text-decoration: underline;"> syntactical validations </span> by imposing a schema, type conversions, imposing other syntactic constraints like data ranges
+                                </li>
+                                <li>
+                                    Perform <span style="text-decoration: underline;"> semantic validation </span> by having list of legal values, to impose constraints.
+                                </li>
+                            </ul>
+                            
                         </div>
 
  
@@ -394,12 +479,6 @@
                     </ul>
                     
                     
-                    demo how to handle exceptions  --  integration tests, regression tests (used when major component of development is changed like the software or data schema. It is a confirmation test. Does this still work), 
-                    (predictive) try-catch
-                    (in-time)Logs - my crutch. The holy grail.
-                    how to validate input when ingesting data
-                    Perform syntactical validations by imposing a schema, type conversions, imposing other syntactic constraints like data ranges
-                    Perform semantic validation by having list of legal values, to impose constraints.
                     
                 
                 <!-- Conclusion -->
