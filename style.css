@@ -158,7 +158,8 @@ body p, body pre
     position: absolute;
     transform: translateY(-50%);
     /* top: 50%; */
-    top: 80%
+    top: 80%;
+    width: 10% !important;
 }
 
 .fa {
@@ -2380,6 +2381,10 @@ footer ul
 
 .readable-size {
     font-size: 1.15rem;
+}
+
+.readable-size-small {
+    font-size: 1rem;
 }
 
 /* 767px, 1200px, 1405px, 1800px */

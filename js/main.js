@@ -235,7 +235,7 @@ function textSliderSettings() {
             autoplayHoverPause: hover_pause,
             autoplayTimeout: speed_value,
             responsiveClass: true,
-            items: 1
+            items: 2
         });
     });
 }

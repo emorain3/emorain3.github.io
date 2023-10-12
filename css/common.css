@@ -238,9 +238,9 @@ em
     font-style: italic;
 }
 ol
-{
+/* {
     list-style-type: decimal;
-}
+} */
 pre
 {
     word-wrap: break-word;
@@ -483,8 +483,9 @@ sub
 {
     font-size: 24px;
     line-height: 35px;    
-    max-width: 90%;
-    width: 380px;
+    max-width: 120%;
+    /* width: 520px; */
+    width: 75vw;
 }
 
 .text-slider-header-quotes 
